@@ -54,5 +54,5 @@ The device baudrate, by default: `9600`.
 
 * **`sensor_names`** (/std/vector\</std/string\>)
 
-Temperature sensor names, also defined the logged sensor number.
+Temperature sensor names, also defines the number of logged sensors.
 
