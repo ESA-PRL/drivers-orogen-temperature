@@ -1,0 +1,20 @@
+name "temperature"
+version "1.0"
+
+using_library "temperature"
+import_types_from "base"
+import_types_from "temperatureTypes.hpp"
+
+task_context "Task" do
+    needs_configuration
+    
+    # Configure the device
+    property("port", "/std/string", "/dev/ttyACM0").doc("The device port")
+    property("baudrate", "/int", 9600).doc("The device baudrate")
+    property("sensor_names", "/std/vector</std/string>").doc("Temperature sensor names, also defined the logged sensor number")
+    
+    output_port("temperature_samples", "/temperature/samples/Temperature").doc("Timestamped temperature reading samples")
+    
+    fd_driven
+end
+
