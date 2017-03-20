@@ -2,7 +2,7 @@
 #define TEMPERATURE_TASK_TASK_HPP
 
 #include "temperature/TaskBase.hpp"
-#include <temperature/src/Temperature.hpp>
+#include <temperature/Temperature.hpp>
 #include <rtt/extras/FileDescriptorActivity.hpp>
 #include <base/Temperature.hpp>
 
